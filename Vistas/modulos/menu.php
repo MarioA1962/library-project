@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="http://localhost/libreria/Libros">
                             <i class="fa fa-book"></i>
                             <span>Libros</span>
                         </a>

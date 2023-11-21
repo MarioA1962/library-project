@@ -62,7 +62,7 @@ session_start();
     $url = isset($_GET["url"]) ? $_GET["url"] : "Inicio";
     $url = explode("/", $url);
 
-    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios" || $url[0] == "Clientes" || $url[0] == "Generos" || $url[0] == "Autores" || $url[0] == "Editar-Autor") {
+    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios" || $url[0] == "Clientes" || $url[0] == "Generos" || $url[0] == "Autores" || $url[0] == "Editar-Autor" || $url[0] == "Libros") {
       include "modulos/".$url[0].".php";
     } else {
       include "modulos/Inicio.php";
