@@ -3,17 +3,17 @@
 class GenerosC
 {
 
-    public function CrearGeneroC()
+    public function AgregarGeneroC()
     {
         if (isset($_POST["genero"])) {
             $tablaBD = "generos";
             $genero = $_POST["genero"];
-            $resultado = GenerosM::CrearGeneroM($tablaBD, $genero);
+            $resultado = GenerosM::AgregarGeneroM($tablaBD, $genero);
             if ($resultado) {
                 echo '<script>
                         swal({
                             type: "success",
-                            title: "El Género Literario se ha Creado Correctamente",
+                            title: "El Género Literario se ha Agregado Correctamente",
                             showConfirmButton: true,
                             confirmButtonText: "Cerrar",
                         }).then(function(resultado){

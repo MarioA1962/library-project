@@ -1,6 +1,6 @@
 <div class="login-box">
     <div class="login-logo">
-        <h1>Librería</h1>
+        <h1>Librería El Estudiante</h1>
     </div>
     <div class="login-box-body">
         <p class="login-box-msg">Inicio de Sesión</p>

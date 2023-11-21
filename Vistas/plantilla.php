@@ -8,7 +8,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Librería</title>
+  <title>El Estudiante</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -46,6 +46,7 @@ session_start();
   <script src="http://localhost/libreria/Vistas/sweetalert2/sweetalert2.all.js"></script>
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="icon" href="http://localhost/libreria/Vistas/dist/img/libro.png">
 
 
 </head>
@@ -61,7 +62,7 @@ session_start();
     $url = isset($_GET["url"]) ? $_GET["url"] : "Inicio";
     $url = explode("/", $url);
 
-    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios" || $url[0] == "Clientes" || $url[0] == "Generos") {
+    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios" || $url[0] == "Clientes" || $url[0] == "Generos" || $url[0] == "Autores" || $url[0] == "Editar-Autor") {
       include "modulos/".$url[0].".php";
     } else {
       include "modulos/Inicio.php";
@@ -127,6 +128,8 @@ session_start();
   <script src="http://localhost/libreria/Vistas/js/usuarios.js"></script>
   <script src="http://localhost/libreria/Vistas/js/clientes.js"></script>
   <script src="http://localhost/libreria/Vistas/js/generos.js"></script>
+  <script src="http://localhost/libreria/Vistas/js/autores.js"></script>
+  <script src="http://localhost/libreria/Vistas/js/libros.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function(){

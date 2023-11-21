@@ -4,7 +4,7 @@
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><b class="fa fa-book" style="font-size: 25px;"></b></span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Librería</b></span>
+    <span class="logo-lg"><b>El Estudiante</b></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">

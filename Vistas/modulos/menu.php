@@ -35,7 +35,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="http://localhost/libreria/Autores">
                             <i class="fa fa-users"></i>
                             <span>Autores</span>
                         </a>

@@ -5,13 +5,15 @@ require_once "ConexionBD.php";
 class GenerosM extends ConexionBD
 {
 
-    public static function CrearGeneroM($tablaBD, $genero)
+    public static function AgregarGeneroM($tablaBD, $genero)
     {
         $pdo = ConexionBD::cBD()->prepare("INSERT INTO $tablaBD (nombre) VALUES (:nombre)");
         $pdo->bindParam(":nombre", $genero, PDO::PARAM_STR);
         if ($pdo->execute()) {
             return true;
         }
+        $pdo -> close();
+        $pdo = null;
     }
 
     public static function VerGenerosM($tablaBD, $columna, $valor)
@@ -26,6 +28,8 @@ class GenerosM extends ConexionBD
             $pdo->execute();
             return $pdo->fetch();
         }
+        $pdo -> close();
+        $pdo = null;
     }
 
     public static function EditarGeneroM($tablaBD, $datosC)
@@ -36,6 +40,8 @@ class GenerosM extends ConexionBD
         if ($pdo->execute()) {
             return true;
         }
+        $pdo -> close();
+        $pdo = null;
     }
 
 
@@ -46,5 +52,7 @@ class GenerosM extends ConexionBD
         if ($pdo->execute()) {
             return true;
         }
+        $pdo -> close();
+        $pdo = null;
     }
 }
