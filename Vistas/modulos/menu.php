@@ -14,7 +14,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="http://localhost/libreria/Clientes">
                     <i class="fa fa-users"></i>
                     <span>Clientes</span>
                 </a>
@@ -29,7 +29,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li>
-                        <a href="#">
+                        <a href="http://localhost/libreria/Generos">
                             <i class="fa fa-diamond"></i>
                             <span>Géneros</span>
                         </a>

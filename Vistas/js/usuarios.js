@@ -22,7 +22,7 @@ $(".table").on("click", ".EditarUsuario", function () {
   var datos = new FormData();
   datos.append("Uid", Uid);
   $.ajax({
-    url: "Ajax/UsuariosA.php",
+    url: "Ajax/usuariosA.php",
     method: "POST",
     data: datos,
     dataType: "json",

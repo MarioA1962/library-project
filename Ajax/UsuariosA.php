@@ -1,6 +1,6 @@
 <?php
 
-require_once "../Controladores/UsuariosC.php";
+require_once "../Controladores/usuariosC.php";
 require_once "../Modelos/usuariosM.php";
 
 class UsuariosA

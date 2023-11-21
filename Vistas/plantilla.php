@@ -61,7 +61,7 @@ session_start();
     $url = isset($_GET["url"]) ? $_GET["url"] : "Inicio";
     $url = explode("/", $url);
 
-    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios") {
+    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios" || $url[0] == "Clientes" || $url[0] == "Generos") {
       include "modulos/".$url[0].".php";
     } else {
       include "modulos/Inicio.php";
@@ -118,8 +118,16 @@ session_start();
   <script src="http://localhost/libreria/Vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="http://localhost/libreria/Vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
   <script src="http://localhost/libreria/Vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
+  <script src="http://localhost/libreria/Vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
+
+  <script src="http://localhost/libreria/Vistas/bower_components/input-mask/jquery.inputmask.js"></script>
+  <script src="http://localhost/libreria/Vistas/bower_components/input-mask/jquery.inputmask.date.extensions.js"></script>
+  <script src="http://localhost/libreria/Vistas/bower_components/input-mask/jquery.inputmask.extensions.js"></script>
 
   <script src="http://localhost/libreria/Vistas/js/usuarios.js"></script>
+  <script src="http://localhost/libreria/Vistas/js/clientes.js"></script>
+  <script src="http://localhost/libreria/Vistas/js/generos.js"></script>
+
   <script type="text/javascript">
     $(document).ready(function(){
       $('.sidebar-menu').tree();
