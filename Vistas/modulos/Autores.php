@@ -8,7 +8,7 @@
                 <button class="btn btn-primary" data-toggle="modal" data-target="#AgregarAutor">Agregar Autor</button>
             </div>
             <div class="box-body">
-                <table class="table table-bordered table-striped table-hover dt-responsive">
+                <table class="table table-bordered table-hover table-striped dt-responsive">
                     <thead>
                         <tr>
                             <th>N°</th>
@@ -28,13 +28,13 @@
                         foreach ($resultado as $key => $value){
                             $bibliografia = substr($value["bibliografia"], 0, 300);
                             echo '<tr>
-                                    <td>' . ($key+1) . '</td>
-                                    <td>
+                                    <td>' . ($key+1) . '</td>';
+                                    echo '<td>
                                         <img src="' . $value["foto"] . '" width="150px" height="100px">
-                                    </td>
-                                    <td>' . $value["nombre"] . '</td>
-                                    <td>' . $bibliografia . '</td>
-                                    <td>
+                                    </td>';
+                                    echo '<td>' . $value["nombre"] . '</td>';
+                                    echo '<td>' . $bibliografia . '</td>';
+                                    echo '<td>
                                         <a href="#">
                                             <button class="btn btn-primary"><i class="fa fa-book"></i></button>
                                         </a>
@@ -43,13 +43,10 @@
                                         </a>
                                         <br>
                                         <button class="btn btn-danger BorrarAutor" Aid="' . $value["id"] . '" Afoto="' . $value["foto"] . '"><i class="fa fa-trash"></i></button>
-                                    </td>
-                                </tr>';
+                                    </td>';
+                                    echo '</tr>';
                         }
                         ?>
-                        <tr>
-                            <td></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>

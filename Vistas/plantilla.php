@@ -33,6 +33,10 @@ session_start();
 
   <link rel="stylesheet" href="http://localhost/libreria/Vistas/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
   <link rel="stylesheet" href="http://localhost/libreria/Vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
+  <link rel="stylesheet" href="http://localhost/libreria/Vistas/bower_components/select2/dist/css/select2.min.css">
+
+  <link rel="stylesheet" href="http://localhost/libreria/Vistas/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <!-- <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"> -->
 
@@ -46,7 +50,11 @@ session_start();
   <script src="http://localhost/libreria/Vistas/sweetalert2/sweetalert2.all.js"></script>
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <link rel="icon" href="http://localhost/libreria/Vistas/dist/img/libro.png">
+  <link rel="icon" href="http://localhost/libreria/Vistas/dist/img/libro.png">  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
 
 
 </head>
@@ -57,12 +65,18 @@ session_start();
   if (isset($_SESSION["Ingresar"]) && $_SESSION["Ingresar"] == true) {
     echo '<div class="wrapper">';
     include "modulos/cabecera.php";
-    include "modulos/menu.php";
+    if($_SESSION["rol"]=="Administrador"){
+      include "modulos/menu.php";
+    }else{
+      include "modulos/menuV.php";
+    }
+    
 
     $url = isset($_GET["url"]) ? $_GET["url"] : "Inicio";
     $url = explode("/", $url);
 
-    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios" || $url[0] == "Clientes" || $url[0] == "Generos" || $url[0] == "Autores" || $url[0] == "Editar-Autor" || $url[0] == "Libros") {
+    if ($url[0] == "Inicio" || $url[0] == "Salir" || $url[0] == "Mis-Datos" || $url[0] == "Usuarios" || $url[0] == "Clientes" || $url[0] == "Generos" || $url[0] == "Autores" || $url[0] == "Editar-Autor" 
+      || $url[0] == "Libros" || $url[0] == "Crear-Venta" || $url[0] == "Venta" || $url[0] == "Ver-Ventas" || $url[0] == "Ver-Venta"|| $url[0] == "Compras" || $url[0] == "Pedidos") {
       include "modulos/".$url[0].".php";
     } else {
       include "modulos/Inicio.php";
@@ -125,17 +139,19 @@ session_start();
   <script src="http://localhost/libreria/Vistas/bower_components/input-mask/jquery.inputmask.date.extensions.js"></script>
   <script src="http://localhost/libreria/Vistas/bower_components/input-mask/jquery.inputmask.extensions.js"></script>
 
+  <script src="http://localhost/libreria/Vistas/bower_components/select2/dist/js/select2.js"></script>
+
+  <script src="http://localhost/libreria/Vistas/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  
+
+
   <script src="http://localhost/libreria/Vistas/js/usuarios.js"></script>
   <script src="http://localhost/libreria/Vistas/js/clientes.js"></script>
   <script src="http://localhost/libreria/Vistas/js/generos.js"></script>
   <script src="http://localhost/libreria/Vistas/js/autores.js"></script>
-  <script src="http://localhost/libreria/Vistas/js/libros.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.sidebar-menu').tree();
-    })
-  </script>
+  <script src="http://localhost/libreria/Vistas/js/sobreLibros.js"></script>
+  <script src="http://localhost/libreria/Vistas/js/ventas.js"></script>
+  <script src="http://localhost/libreria/Vistas/js/envios.js"></script>
 
 </body>
 

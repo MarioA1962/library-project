@@ -58,27 +58,16 @@
                 </a>
                 <ul class="treeview-menu">
                     <li>
-                        <a href="#">
-                            <i class="fa fa-cart-plus"></i>
-                            <span>Crear Venta</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <a href="http://localhost/libreria/Ver-Ventas">
                             <i class="fa fa-check-square-o"></i>
                             <span>Ver Ventas</span>
                         </a>
                     </li>
                 </ul>
             </li>
+
             <li>
-                <a href="#">
-                    <i class="fa fa-truck"></i>
-                    <span>Envíos</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
+                <a href="http://localhost/libreria/Pedidos">
                     <i class="fa fa-cubes"></i>
                     <span>Pedidos</span>
                 </a>

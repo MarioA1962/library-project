@@ -18,7 +18,7 @@ if ($_SESSION["rol"] != "Administrador") {
                 <button class="btn btn-primary" data-toggle="modal" data-target="#CrearUsuario">Crear Nuevo Usuario</button>
             </div>
             <div class="box-body">
-                <table class="table table-bordered table-hover table-striped"> <!-- dt-responsive -->
+                <table class="table table-bordered table-hover table-striped">
                     <thead>
                         <tr>
                             <th>Apellido</th>

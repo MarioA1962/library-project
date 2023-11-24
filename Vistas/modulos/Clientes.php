@@ -34,11 +34,11 @@
                                 <td>' . $value["direccion"] . '</td>
                                 <td>' . $value["telefono"] . '</td>
                                 <td>
-                                    <a href=""> 
+                                    <a href="http://localhost/libreria/Compras/'.$value["id"].'"> 
                                         <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i></button>
                                     </a>
                                     <button class="btn btn-success EditarCliente" data-toggle="modal" data-target="#EditarCliente" Cid="' . $value["id"] . '"><i class="fa fa-pencil"></i></button>
-                                    <button class="btn btn-danger BorrarCliente" Cid="' . $value["id"] . '" ><i class="fa fa-trash"></i></button>
+                                    <button class="btn btn-danger BorrarCliente" Cid="'. $value["id"] .'" ><i class="fa fa-trash"></i></button>
                                 </td>
                             </tr>';
                         }

@@ -59,8 +59,7 @@
                                 echo '<button class="btn btn-success">' . $value["stock"] . '</button>';
                             }
                         
-                            echo '</td>
-                                    <td>S/. ' . $value["precio"] . '</td>
+                            echo '<td>S/. ' .$value["precio"]. '</td>
                                     <td>
                                         <button class="btn btn-success"><i class="fa fa-pencil"></i></button>
                                         <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
@@ -68,9 +67,6 @@
                                 </tr>';
                         }
                         ?>
-                        <tr>
-                            <td></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
