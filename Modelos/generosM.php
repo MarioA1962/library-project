@@ -12,8 +12,6 @@ class GenerosM extends ConexionBD
         if ($pdo->execute()) {
             return true;
         }
-        $pdo -> close();
-        $pdo = null;
     }
 
     public static function VerGenerosM($tablaBD, $columna, $valor)
@@ -28,8 +26,6 @@ class GenerosM extends ConexionBD
             $pdo->execute();
             return $pdo->fetch();
         }
-        $pdo -> close();
-        $pdo = null;
     }
 
     public static function EditarGeneroM($tablaBD, $datosC)
@@ -40,8 +36,6 @@ class GenerosM extends ConexionBD
         if ($pdo->execute()) {
             return true;
         }
-        $pdo -> close();
-        $pdo = null;
     }
 
 
@@ -52,7 +46,5 @@ class GenerosM extends ConexionBD
         if ($pdo->execute()) {
             return true;
         }
-        $pdo -> close();
-        $pdo = null;
     }
 }

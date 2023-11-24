@@ -14,8 +14,6 @@ class AutoresM extends ConexionBD{
         if ($pdo->execute()){
             return true;
         }
-        $pdo -> close();
-        $pdo = null;
     }
 
     static public function VerAutoresM($tablaBD, $columna, $valor){
@@ -29,8 +27,6 @@ class AutoresM extends ConexionBD{
             $pdo -> execute();
             return $pdo -> fetch();
         }
-        $pdo -> close();
-        $pdo = null;
     }
 
     static public function ActualizarAutorM($tablaBD, $datosC){
@@ -42,8 +38,6 @@ class AutoresM extends ConexionBD{
         if ($pdo->execute()) {
             return true;
         }
-        $pdo -> close();
-        $pdo = null;
     }
 
     static public function BorrarAutorM($tablaBD, $id)
@@ -53,8 +47,6 @@ class AutoresM extends ConexionBD{
         if ($pdo->execute()) {
             return true;
         }
-        $pdo -> close();
-        $pdo = null;
     }
     
 }

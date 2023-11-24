@@ -58,4 +58,21 @@ class LibrosC{
         return $resultado;
     }
 
+    public function AgregarStockC(){
+        if(isset($_POST["id_libro"])){
+            $tablaBD2 = "libros";
+            $datosC2 = array("id_libro"=>$_POST["id_libro"], "stock"=>$_POST["stock"]);
+            $resultado2 = VentasM::ActualizarStockM($tablaBD2, $datosC2);
+
+            if ($resultado2==True) {
+
+                echo '<script>                        
+                        window.location = "Inicio";
+                </script>';
+            }
+
+
+        }
+    }
+
 }

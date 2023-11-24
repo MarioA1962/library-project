@@ -20,8 +20,6 @@ class LibrosM extends ConexionBD{
         if ($pdo->execute()){
             return true;
         }
-        $pdo -> close();
-        $pdo = null;
     }
 
     static public function VerLibrosM($tablaBD, $columna, $valor){
@@ -35,7 +33,5 @@ class LibrosM extends ConexionBD{
             $pdo -> execute();
             return $pdo -> fetch();
         }
-        $pdo -> close();
-        $pdo = null;
     }
 }
