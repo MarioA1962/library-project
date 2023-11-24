@@ -50,9 +50,9 @@ session_start();
   <script src="http://localhost/libreria/Vistas/sweetalert2/sweetalert2.all.js"></script>
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <link rel="icon" href="http://localhost/libreria/Vistas/dist/img/libro.png">  
+  <link rel="icon" href="http://localhost/libreria/Vistas/dist/img/libro.png"> 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   
 
 
@@ -152,6 +152,12 @@ session_start();
   <script src="http://localhost/libreria/Vistas/js/sobreLibros.js"></script>
   <script src="http://localhost/libreria/Vistas/js/ventas.js"></script>
   <script src="http://localhost/libreria/Vistas/js/envios.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidebar-menu').tree();
+    })
+  </script>
 
 </body>
 
