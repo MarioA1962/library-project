@@ -35,9 +35,6 @@
                                     echo '<td>' . $value["nombre"] . '</td>';
                                     echo '<td>' . $bibliografia . '</td>';
                                     echo '<td>
-                                        <a href="#">
-                                            <button class="btn btn-primary"><i class="fa fa-book"></i></button>
-                                        </a>
                                         <a href="Editar-Autor/' . $value["id"] . '">
                                             <button class="btn btn-success"><i class="fa fa-pencil"></i></button>
                                         </a>

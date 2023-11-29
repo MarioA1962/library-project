@@ -66,12 +66,6 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-cubes"></i>
-                    <span>Pedidos</span>
-                </a>
-            </li>
         </ul>
     </section>
 </aside>

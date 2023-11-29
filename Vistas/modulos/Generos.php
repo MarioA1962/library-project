@@ -44,9 +44,6 @@
                                         echo'</form>
                                     </td>
                                     <td>
-                                        <a href="#">
-                                            <button class="btn btn-primary">Ver Libros</button>
-                                        </a>
                                         <button class="btn btn-danger BorrarGenero" Gid="' . $value["id"] . '"><i class="fa fa-trash"></i></button>
                                     </td>
                                 </tr>';
